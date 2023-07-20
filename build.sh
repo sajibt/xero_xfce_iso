@@ -19,7 +19,7 @@ echo
 	desktop="xfce"
 	dmDesktop="xfce"
 
-	xeroxfceVersion='2023.07'
+	xeroxfceVersion='2023.08'
 
 	isoLabel='XeroXFCE-'$xeroxfceVersion'-x86_64.iso'
 
