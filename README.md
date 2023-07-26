@@ -29,13 +29,13 @@ If you already are on any version of **XeroLinux**, you do not need to do all th
 
 In case you are on somthing other than **Arch**, or don't want to install Arch to build, you always have **Distrobox** as an option. Follow [official guide](https://distrobox.privatedns.org/#installation) to install it on your specific system, then follow below steps to get the **XeroBuilder** **Arch** ccontainer up and running then follow normal steps 1 & 2 to build the ISO..
 
-- Create The Container :
+- Create The Container :<br />
 `distrobox create -i quay.io/toolbx-images/archlinux-toolbox -n "xerobuilder"`
 
-- Enter the Container :
+- Enter the Container :<br />
 `distrobox enter xerobuilder`
 
-- Install necessary packages
+- Install necessary packages :<br />
 `sudo pacman -Syyu && sudo pacman -S --noconirm neofetch git archiso base base-devel`
 
 ### Step 1 - Clone Build Repo :
