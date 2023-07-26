@@ -29,7 +29,7 @@ If you already are on any version of **XeroLinux**, you do not need to do all th
 
 In case you are on somthing other than **Arch**, or don't want to install Arch to build, you always have **Distrobox** as an option.
 
-Follow [(Official Guide)](https://distrobox.privatedns.org/#installation) to install it on your specific system, then follow steps below to get the **XeroBuilder** **Arch** container up and running.
+Follow the [(Official Guide)](https://distrobox.privatedns.org/#installation) to install it on your specific system, then follow steps below to get the **XeroBuilder** **Arch** container up and running.
 
 Afterwards follow steps 1 & 2 to build the ISO...
 
