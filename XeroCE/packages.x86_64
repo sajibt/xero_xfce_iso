@@ -485,8 +485,10 @@ topgrade
 libpamac
 pamac-cli
 pamac-gtk
-appimagelauncher
+pacseek-bin
+libpamac-aur-plugin
 libpamac-flatpak-plugin
+libpamac-appstream-plugin
 
 #######################################################
 ###                    EXTRAS                       ###
