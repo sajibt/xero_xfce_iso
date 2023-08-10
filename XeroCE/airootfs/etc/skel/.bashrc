@@ -24,9 +24,6 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Path to your emacs installation.
-export PATH="$HOME/.config/emacs/bin:$PATH"
-
 # Path to bat config
 export BAT_CONFIG_PATH="~/.config/bat/config.conf"
 
@@ -81,6 +78,7 @@ alias pget='paru -S '
 alias yget='yay -S '
 alias yrem='yay -R '
 alias prem='paru -R '
+alias paur='sudo pamac update -a '
 
 #Bash aliases
 alias mkfile='touch'
