@@ -74,7 +74,7 @@ Build will take some time depending on your machine's specs, once done you will 
 
 ### Getting the ISOs
 
-You can grab the Pre-built ISO by *"buying"* it from our new [**Ko-Fi Shop**](https://ko-fi.com/s/cb8ec99afa), or by donating any amount from $10 upwards on [**FundRazr**](https://fundrazr.com/xerolinux). Please Read below to know more...
+You can grab the Pre-built ISO by *"buying"* it from our new [**Ko-Fi Shop**](https://ko-fi.com/s/cb8ec99afa), or by donating any amount from $6 upwards on [**FundRazr**](https://fundrazr.com/xerolinux). Please Read below to know more...
 
 ### Why is the ISO paywalled ?
 
