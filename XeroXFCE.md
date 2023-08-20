@@ -1,4 +1,4 @@
-# XeroXFCE ISO Repo
+# XeroXFCE ISO Build Repo
 
 <p align="center">
     <img width="300" src="https://i.imgur.com/QWqMIsr.png" alt="logo">
