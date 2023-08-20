@@ -1,6 +1,6 @@
 # XeroXFCE ISO Repo
 
-This here is a Spin using the **XFCE** Desktop Environment,, not to be confused with the **KDE** flagship, [Click Here](https://forum.xerolinux.xyz/thread-258.html) for full release info.
+This here is a Spin using the **XFCE** Desktop Environment, not to be confused with the **KDE** flagship, [Click Here](https://forum.xerolinux.xyz/thread-258.html) for full release info.
 
 A Spin is a side-project not main one, which means when it comes to the DE it uses, support is limited since I do not use it myself, however you might get some support from our community. You can either build it yourselves for *free* following the guide below, which will net you the latest version/packages available as of build time, or if you can't for whatever reason, you will be able to download a pre-built ISO for a small fee. Please scroll down for more info on how you can do that.
 
