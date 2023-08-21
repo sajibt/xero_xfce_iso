@@ -23,7 +23,7 @@ Script was tested on <a href="https://archlinux.org">Arch</a>/<a href="https://x
 
 ## Note before building
 
-If you already are on any version of **XeroLinux**, you do not need to do all this, just use our tool, which has a script that will do it for you. Just launch it, go to **Post-Instal System Config** and click on the **ISO Builder** button, select option *3* **XeroLinux XFCE  Spin** and watch it do its magic. Keep a close eye on it while it builds, because you will be prompted for root password, please type it so it can clean up the build environment. Finally your ISO is ready in `~/XeroCE-Out/` Have fun ! Otherwise follow the guide below...
+If you already are on any version of **XeroLinux**, you do not need to do all this, just use our tool, which has a script that will do it for you. Just launch it, go to **Post-Install System Config** and click on the **ISO Builder** button, select option *3* **XeroLinux XFCE  Spin** and watch it do its magic. Keep a close eye on it while it builds, because you will be prompted for root password, please type it so it can clean up the build environment. Finally your ISO is ready in `~/XeroCE-Out/` Have fun ! Otherwise follow the guide below...
 
 ### Distrobox Option
 
@@ -45,7 +45,7 @@ distrobox enter xerobuilder
 
 - Install necessary packages :
 ```
-sudo pacman -Syyu && sudo pacman -S --noconirm neofetch git archiso base base-devel
+sudo pacman -Syu && sudo pacman -S --noconfirm neofetch git archiso base base-devel
 ```
 
 That's it. Now follow below steps to build XeroLinux...
