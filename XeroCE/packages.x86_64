@@ -485,6 +485,7 @@ libpamac
 pamac-cli
 pamac-gtk
 pacseek-bin
+pacman-mirrorup
 libpamac-aur-plugin
 libpamac-flatpak-plugin
 libpamac-appstream-plugin
