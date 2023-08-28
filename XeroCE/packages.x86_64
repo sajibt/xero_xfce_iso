@@ -481,12 +481,11 @@ ffmpegthumbs
 yay-bin
 flatpak
 topgrade
-libpamac
 pamac-cli
-pamac-gtk
 pacseek-bin
+pamac-nosnap
 pacman-mirrorup
-libpamac-flatpak-plugin
+libpamac-nosnap
 
 #######################################################
 ###                    EXTRAS                       ###
