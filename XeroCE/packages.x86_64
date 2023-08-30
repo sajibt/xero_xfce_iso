@@ -1,9 +1,3 @@
-#####################################################################
-##                            PACKAGES AVAILABLE
-#####################################################################
-
-### archiso
-
 archiso
 alsa-utils
 amd-ucode
@@ -14,6 +8,7 @@ base
 base-devel
 bind
 brltty
+broadcom-wl
 btrfs-progs
 clonezilla
 cloud-init
@@ -30,6 +25,7 @@ dosfstools
 e2fsprogs
 edk2-shell
 efibootmgr
+espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -52,6 +48,7 @@ jfsutils
 kinit
 kitty-terminfo
 less
+lftp
 libfido2
 libusb-compat
 linux
@@ -81,8 +78,9 @@ nilfs-utils
 nmap
 ntfs-3g
 nvme-cli
-openconnect
 open-iscsi
+openconnect
+openpgp-card-tools
 openssh
 openvpn
 partclone
@@ -96,8 +94,10 @@ reflector
 #refind
 rp-pppoe
 rsync
+rxvt-unicode-terminfo
 screen
 sdparm
+sequoia-sq
 sg3_utils
 smartmontools
 sof-firmware
@@ -110,11 +110,13 @@ terminus-font
 testdisk
 tldr
 tmux
+tpm2-tools
 tpm2-tss
 udftools
 usb_modeswitch
 usbmuxd
 usbutils
+vim
 vpnc
 wezterm-terminfo
 wireguard-tools
@@ -231,9 +233,9 @@ kconfig
 kpmcore
 yaml-cpp
 boost-libs
-polkit-qt5
 kcoreaddons
 kiconthemes
+polkit-gnome
 mkinitcpio-openswap
 gtk-update-icon-cache
 
@@ -248,7 +250,6 @@ gksu
 gmrun
 figlet
 ostree
-okular
 flatseal
 numlockx
 lm_sensors
@@ -256,7 +257,6 @@ checkbashisms
 qalculate-gtk
 samba-support
 appstream-glib
-#systemd-manager-git
 
 ### Bat to replace cat
 
@@ -282,6 +282,10 @@ qt5ct
 plank
 kvantum
 neofetch
+gtk-engines
+adw-gtk-theme
+gnome-themes-extra
+gtk-engine-murrine
 
 ### Rice/Config Related
 
@@ -417,6 +421,7 @@ modemmanager
 networkmanager
 nm-cloud-setup
 rate-mirrors-bin
+systemd-resolvconf
 networkmanager-vpnc
 networkmanager-pptp
 networkmanager-l2tp
@@ -502,7 +507,7 @@ xorg-server
 spice-vdagent
 open-vm-tools
 qemu-guest-agent
-virtualbox-guest-utils
+virtualbox-guest-utils-nox
 
 
 #######################################################

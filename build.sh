@@ -24,7 +24,7 @@ echo
 	isoLabel='XeroXFCE-'$xeroxfceVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 71-1"
+	archisoRequiredVersion="archiso 72-1"
 	buildFolder=$HOME"/xeroce-build"
 	outFolder=$HOME"/XeroCE-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
