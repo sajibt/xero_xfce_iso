@@ -19,12 +19,12 @@ echo
 	desktop="xfce"
 	dmDesktop="xfce"
 
-	xeroxfceVersion='2023.09'
+	xeroxfceVersion='2023.10'
 
 	isoLabel='XeroXFCE-'$xeroxfceVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 72-1"
+	archisoRequiredVersion="archiso 73-1"
 	buildFolder=$HOME"/xeroce-build"
 	outFolder=$HOME"/XeroCE-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
