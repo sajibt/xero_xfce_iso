@@ -29,7 +29,7 @@ If you already are on any version of **XeroLinux**, you do not need to do all th
 
 In case you are on something other than **Arch**, or don't want to install Arch to build, you always have **Distrobox** as an option.
 
-Follow the [**Official Guide**](https://distrobox.privatedns.org/#installation) to install it on your specific system, then follow steps below to get the **XeroBuilder** **Arch** container up & running.
+Follow the [**Official Guide**](https://distrobox.it/compatibility/#host-distros) to install it on your specific system, then follow steps below to get the **XeroBuilder** **Arch** container up & running.
 
 Afterwards, follow steps 1 & 2 to build the ISO...
 
@@ -45,7 +45,7 @@ distrobox enter xerobuilder
 
 - Install necessary packages :
 ```
-sudo pacman -Syu && sudo pacman -S --noconfirm neofetch git archiso base base-devel
+sudo pacman -Syyu && sudo pacman -S --noconfirm neofetch git archiso base base-devel nano vim
 ```
 
 That's it. Now follow below steps to build XeroLinux...
