@@ -513,6 +513,9 @@ virtualbox-guest-utils
 ###                  XFCE Desktop                    ###
 #######################################################
 
+## XFCE4 Desktop
+## https://archlinux.org/groups/x86_64/xfce4/
+
 xfce4
 xfburn
 parole
@@ -589,6 +592,7 @@ kirigami2
 gnome-disk-utility
 
 ### Others
+### https://archlinux.org/groups/x86_64/xfce4-goodies/
 
 ocs-url
 xdg-user-dirs
