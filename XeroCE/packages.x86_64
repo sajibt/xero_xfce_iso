@@ -196,12 +196,9 @@ libxinerama
 bash-completion
 
 ### Xorg Applications
+### https://archlinux.org/groups/x86_64/xorg-apps/
 
 xorg-apps
-xorg-xrdb
-xorg-xkill
-xorg-xinit
-xorg-server
 
 ### Essentials
 
@@ -282,6 +279,7 @@ gst-plugin-pipewire
 
 ## Pipewire Audio
 
+pavucontrol
 wireplumber
 pipewire-jack
 pipewire-support
@@ -462,7 +460,6 @@ lzop
 nmon
 tree
 vala
-htop
 lshw
 cmake
 cblas
@@ -527,8 +524,8 @@ extra-cmake-modules
 #######################################################
 
 
-## XFCE Stuff
-https://archlinux.org/groups/x86_64/xfce4/
+### XFCE Stuff
+### https://archlinux.org/groups/x86_64/xfce4/
 
 exo
 xfce4
@@ -610,6 +607,7 @@ lightdm-gtk-greeter-settings
 ### Others
 
 yad
+htop
 ocs-url
 xdg-user-dirs
 pacman-contrib
