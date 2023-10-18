@@ -180,7 +180,6 @@ game-devices-udev
 xf86-input-vmmouse
 xf86-input-libinput
 xf86-input-synaptics
-libinput_gestures_qt
 xf86-input-elographics
 
 ### Printers & Scanner support
