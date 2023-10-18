@@ -1,3 +1,7 @@
+#######################################################
+###                   Archiso                       ###
+#######################################################
+
 archiso
 alsa-utils
 amd-ucode
@@ -40,6 +44,7 @@ gpart
 gparted
 gpm
 gptfdisk
+grub
 hdparm
 hyperv
 intel-ucode
@@ -47,7 +52,6 @@ irssi
 iw
 iwd
 jfsutils
-kinit
 kitty-terminfo
 less
 lftp
@@ -93,7 +97,6 @@ ppp
 pptpclient
 pv
 reflector
-#refind
 rp-pppoe
 rsync
 rxvt-unicode-terminfo
@@ -148,7 +151,78 @@ dnsutils
 logrotate
 
 #######################################################
-###                    XERO                         ###
+###                  Required                       ###
+#######################################################
+
+### XeroLinux Build
+
+xerowelcome
+calamares-app
+xero-xfce-config
+xero-fix-scripts
+calamares-xfce-cfg
+xerolinux-mirrorlist
+
+### Build Stuff
+
+xmlto
+boost
+ckbcomp
+yaml-cpp
+boost-libs
+mkinitcpio-openswap
+gtk-update-icon-cache
+
+### Grub Stuff
+
+grub
+os-prober
+grub-tools
+update-grub
+
+### Tools
+
+cryptsetup
+brightnessctl
+mkinitcpio-firmware
+power-profiles-daemon
+
+### Bash & Other
+
+dex
+bash
+make
+libxinerama
+bash-completion
+
+### Xorg Applications
+
+xorg-apps
+xorg-xrdb
+xorg-xkill
+xorg-xinit
+xorg-server
+
+### Essentials
+
+kio
+ki18n
+solid
+xmlto
+ckbcomp
+kconfig
+kpmcore
+qt5-base
+yaml-cpp
+boost-libs
+kcoreaddons
+kiconthemes
+polkit-gnome
+mkinitcpio-openswap
+gtk-update-icon-cache
+
+#######################################################
+###                  Hardware                       ###
 #######################################################
 
 ### Video
@@ -168,7 +242,7 @@ xf86-video-openchrome
 piper
 imwheel
 fprintd
-libinput
+touchegg
 gestures
 fingerprint-gui
 xf86-input-void
@@ -182,78 +256,91 @@ xf86-input-libinput
 xf86-input-synaptics
 xf86-input-elographics
 
+### Network Adapters
+
+rtw89-dkms-git
+rtl8821ce-dkms-git
+
 ### Printers & Scanner support
 
+hplip
 hplip-plugin
 print-manager
 printer-support
 scanner-support
+system-config-printer
 
-### XeroLinux Build
+### G-Streamer
 
-xerowelcome
-calamares-app
-xero-xfce-config
-xero-fix-scripts
-calamares-xfce-cfg
-xerolinux-mirrorlist
+gstreamer
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-ugly
+gst-plugins-good
+gst-plugin-pipewire
+
+## Pipewire Audio
+
+wireplumber
+pipewire-jack
+pipewire-support
+
+### Bluetooth
+
+bluez
+blueberry
+bluez-libs
+bluez-utils
+bluez-plugins
+bluez-hid2hci
+
+### Networking tools
+
+avahi
+openldap
+nss-mdns
+smbclient
+net-tools
+openresolv
+traceroute
+modemmanager
+networkmanager
+nm-cloud-setup
+rate-mirrors-bin
+systemd-resolvconf
+networkmanager-vpnc
+networkmanager-pptp
+networkmanager-l2tp
+nm-connection-editor
+network-manager-sstp
+network-manager-applet
+networkmanager-openvpn
+systemd-boot-pacman-hook
+networkmanager-strongswan
+networkmanager-openconnect
+mobile-broadband-provider-info
+
+### Virtual Machine
+
+spice-vdagent
+open-vm-tools
+qemu-guest-agent
+virtualbox-guest-utils
 
 #######################################################
-###      PACKAGES THAT STAY AFTER INSTALLATION      ###
+###                Applications                     ###
 #######################################################
-
-dex
-bash
-make
-xorg-xrdb
-xorg-xkill
-libxinerama
-bash-completion
-
-#######################################################
-###    PACKAGES THAT ARE BY TECHXERO ~ DARKXERO     ###
-#######################################################
-
-cryptsetup
-brightnessctl
-mkinitcpio-firmware
-power-profiles-daemon
-
-#######################################################
-###      PACKAGES THAT ARE REQUIRED TO BUILD !      ###
-#######################################################
-
-kio
-ki18n
-solid
-xmlto
-ckbcomp
-kconfig
-kpmcore
-yaml-cpp
-boost-libs
-kcoreaddons
-kiconthemes
-polkit-gnome
-mkinitcpio-openswap
-gtk-update-icon-cache
-
-#########################################################################
-#                  SOFTWARE FROM ARCH LINUX REPOSITORIES
-#########################################################################
 
 ### Applications
 
 jq
-gksu
 gmrun
 figlet
 ostree
 flatseal
 numlockx
 lm_sensors
-checkbashisms
-qalculate-gtk
 samba-support
 appstream-glib
 
@@ -278,6 +365,7 @@ adobe-source-sans-pro-fonts
 ### Theme Tools
 
 qt5ct
+qt6ct
 plank
 kvantum
 neofetch
@@ -293,16 +381,77 @@ plank-themes
 xfce-backgrounds
 tela-circle-icon-theme-brown-git
 
-### System Utilities
+### Browser
+
+firefox
+firefox-ublock-origin
+
+### Multimedia
+
+ffmpeg
+ffmpegthumbs
+ffnvcodec-headers
+
+### PKG Management
+
+yay-bin
+flatpak
+topgrade
+pacseek-bin
+pacman-contrib
+pacman-mirrorup
+pacman-bintrans
+pacman-mirrorlist
+
+#######################################################
+###                  Libraries                      ###
+#######################################################
+
+### File management
+
+gvfs
+mtpfs
+udiskie
+udisks2
+ldmtool
+gvfs-goa
+gvfs-afc
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+gvfs-google
+gvfs-gphoto2
+
+### Tumbler
+
+libgsf
+tumbler
+freetype2
+libopenraw
+poppler-qt5
+poppler-glib
+ffmpegthumbnailer
+
+### Python & Libs
+
+python-pip
+python-cffi
+python-numpy
+python-docopt
+python-pyaudio
+python-pyparted
+python-pygments
+python-websockets
+
+#######################################################
+###                XeroLinux Extras                 ###
+#######################################################
 
 vi
 duf
 gcc
 git
-gts
 npm
-w3m
-yad
 zip
 xdo
 alsi
@@ -316,12 +465,9 @@ vala
 htop
 lshw
 cmake
-boost
 cblas
 expac
-fuse2
 fuse3
-gtest
 lhasa
 meson
 ninja
@@ -348,13 +494,10 @@ zenity
 dnsmasq
 hddtemp
 mlocate
-gtk-doc
 jsoncpp
-archey3
 fuseiso
 gettext
 gparted
-catfish
 node-gyp
 intltool
 hw-probe
@@ -369,10 +512,8 @@ asciinema
 oniguruma
 appstream
 cifs-utils
-file-roller
 lsb-release
 dbus-python
-dconf-editor
 laptop-detect
 perl-xml-parser
 edid-decode-git
@@ -380,172 +521,59 @@ gnome-disk-utility
 appmenu-gtk-module
 hardcode-fixer-git
 extra-cmake-modules
-power-profiles-daemon
-
-### G-Streamer
-
-gstreamer
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-ugly
-gst-plugins-good
-gst-plugin-pipewire
-
-## Pipewire Audio
-
-wireplumber
-pavucontrol
-pipewire-jack
-pipewire-support
-lib32-pipewire-jack
-
-### Bluetooth
-
-bluez
-blueberry
-bluez-libs
-bluez-utils
-bluez-plugins
-bluez-hid2hci
-
-### Network
-
-avahi
-openldap
-nss-mdns
-smbclient
-net-tools
-openresolv
-traceroute
-modemmanager
-networkmanager
-nm-cloud-setup
-rate-mirrors-bin
-systemd-resolvconf
-networkmanager-vpnc
-networkmanager-pptp
-networkmanager-l2tp
-network-manager-sstp
-network-manager-applet
-networkmanager-openvpn
-systemd-boot-pacman-hook
-networkmanager-strongswan
-networkmanager-openconnect
-mobile-broadband-provider-info
-
-### File management
-
-gvfs
-mtpfs
-udiskie
-udisks2
-ldmtool
-gvfs-afc
-gvfs-mtp
-gvfs-nfs
-gvfs-smb
-gvfs-gphoto2
-
-### Tumbler
-
-libgsf
-tumbler
-freetype2
-libopenraw
-poppler-qt5
-poppler-glib
-ffmpegthumbnailer
-
-### Python & Libs
-
-python-pip
-python-cffi
-python-numpy
-python-docopt
-python-pyaudio
-python-pyparted
-python-pygments
-python-websockets
-
-###########################################################################
-#                           XEROLINUX_SELECTION
-###########################################################################
-
-### Browser
-
-firefox
-firefox-ublock-origin
-
-### Multimedia
-
-ffmpeg
-ffmpegthumbs
-
-### PKG Management
-
-yay-bin
-flatpak
-topgrade
-pacseek-bin
-pacman-mirrorup
 
 #######################################################
-###                    EXTRAS                       ###
+###                  XFCE Desktop                   ###
 #######################################################
 
-### Xorg Applications
 
-xorg-apps
-xorg-xinit
-xorg-server
+## XFCE Stuff
+https://archlinux.org/groups/x86_64/xfce4/
 
-### Virtual Machine
-
-spice-vdagent
-open-vm-tools
-qemu-guest-agent
-virtualbox-guest-utils
-
-
-#######################################################
-###                  XFCE Desktop                    ###
-#######################################################
-
-## XFCE4 Desktop
-## https://archlinux.org/groups/x86_64/xfce4/
-
+exo
 xfce4
+xfwm4
+xfconf
+garcon
+xfce4-panel
+xfwm4-themes
+xfce4-session
+xfce4-terminal
+xfce4-settings
+xfce4-appfinder
+xfce4-power-manager
+
+### Goodies
+### https://archlinux.org/groups/x86_64/xfce4-goodies/
+
 xfburn
 parole
 mousepad
-xfce4-dict
 ristretto
+xfce4-dict
 xfce4-notifyd
 xfce4-xkb-plugin
 xfce4-mpc-plugin
-xfce4-screensaver
 xfce4-taskmanager
 xfce4-eyes-plugin
-xfce4-verve-plugin
-xfce4-timer-plugin
-xfce4-notes-plugin
+xfce4-screensaver
 xfce4-mount-plugin
+xfce4-notes-plugin
+xfce4-timer-plugin
+xfce4-verve-plugin
 xfce4-screenshooter
 xfce4-genmon-plugin
-xfce4-wavelan-plugin
-xfce4-panel-profiles
-xfce4-weather-plugin
 xfce4-netload-plugin
 xfce4-fsguard-plugin
-xfce4-clipman-plugin
-xfce4-sensors-plugin
-xfce4-battery-plugin
 xfce4-cpufreq-plugin
-xfce4-cpugraph-plugin
-xfce4-diskperf-plugin
+xfce4-clipman-plugin
+xfce4-battery-plugin
+xfce4-sensors-plugin
+xfce4-wavelan-plugin
+xfce4-weather-plugin
 xfce4-time-out-plugin
-xfce4-mailwatch-plugin
+xfce4-diskperf-plugin
+xfce4-cpugraph-plugin
 xfce4-pulseaudio-plugin
 xfce4-systemload-plugin
 xfce4-whiskermenu-plugin
@@ -562,6 +590,10 @@ thunar-custom-actions
 thunar-media-tags-plugin
 thunar-archive-plugin-zstd
 
+#######################################################
+###                   XFCE Extras                   ###
+#######################################################
+
 ### GlobalMenu Shit
 
 appmenu-gtk-module
@@ -575,25 +607,11 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
-### Desktop Apps ###
+### Others
 
 yad
-vlc
-zip
-htop
-p7zip
-gparted
-viewnior
-engrampa
-audacious
-flameshot
-kirigami2
-gnome-disk-utility
-
-### Others
-### https://archlinux.org/groups/x86_64/xfce4-goodies/
-
 ocs-url
 xdg-user-dirs
 pacman-contrib
 xdg-user-dirs-gtk
+xfce4-panel-profiles
