@@ -202,18 +202,18 @@ xorg-apps
 
 ### Essentials
 
-kio
-ki18n
-solid
+kio5
+ki18n5
+solid5
 xmlto
 ckbcomp
-kconfig
+kconfig5
 kpmcore
 qt5-base
 yaml-cpp
 boost-libs
-kcoreaddons
-kiconthemes
+kcoreaddons5
+kiconthemes5
 polkit-gnome
 mkinitcpio-openswap
 gtk-update-icon-cache
