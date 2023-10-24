@@ -199,6 +199,8 @@ bash-completion
 ### https://archlinux.org/groups/x86_64/xorg-apps/
 
 xorg-apps
+xorg-xinit
+xorg-server
 
 ### Essentials
 
@@ -609,8 +611,10 @@ lightdm-gtk-greeter-settings
 yad
 htop
 ocs-url
+audacious
 xdg-user-dirs
 pacman-contrib
 xdg-user-dirs-gtk
+audacious-plugins
 xfce4-panel-profiles
 xdg-desktop-portal-xapp
