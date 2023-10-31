@@ -32,7 +32,7 @@ alias cat='bat '
 alias rg='batgrep '
 alias man='tldr '
 
-#iso and version used to install ArcoLinux
+#iso and version used to install XeroLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 
 #ignore upper and lowercase when TAB completion
@@ -41,12 +41,12 @@ bind 'set completion-ignore-case on'
 #systeminfo
 alias probe='sudo -E hw-probe -all -upload'
 
-# Replace ls with exa
-alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
-alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first --icons'  # long format
-alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
-alias l='exa -lah --color=always --group-directories-first --icons' # tree listing
+# Replace ls with eza
+alias ls='eza -al --color=always --group-directories-first --icons' # preferred listing
+alias la='eza -a --color=always --group-directories-first --icons'  # all files and dirs
+alias ll='eza -l --color=always --group-directories-first --icons'  # long format
+alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
+alias l='eza -lah --color=always --group-directories-first --icons' # tree listing
 
 #pacman unlock
 alias unlock='sudo rm /var/lib/pacman/db.lck'
@@ -55,7 +55,7 @@ alias unlock='sudo rm /var/lib/pacman/db.lck'
 alias free='free -mt'
 
 #continue download
-alias wget='wget -c'
+alias wget='wget -c '
 
 #readable output
 alias df='df -h'
@@ -65,8 +65,8 @@ alias userlist='cut -d: -f1 /etc/passwd'
 
 #Pacman for software managment
 alias upall='topgrade'
-alias search='sudo pacman -Qs'
-alias remove='sudo pacman -Rcns'
+alias search='pamac search '
+alias remove='sudo pacman -R '
 alias install='sudo pacman -S '
 alias linstall='sudo pacman -U *.pkg.tar.zst'
 alias update='sudo pacman -Syyu && flatpak update'
@@ -78,10 +78,11 @@ alias pget='paru -S '
 alias yget='yay -S '
 alias yrem='yay -R '
 alias prem='paru -R '
-alias paur='sudo pamac update -a '
+alias yup='yay -Syyu'
+alias pup='paru -Syyu'
 
 #Bash aliases
-alias mkfile='touch'
+alias mkfile='touch '
 alias jctl='journalctl -p 3 -xb'
 alias breload='cd ~ && source ~/.bashrc'
 alias zreload='cd ~ && source ~/.zshrc'
@@ -91,9 +92,6 @@ alias traceme='traceroute github.com'
 
 #hardware info --short
 alias hw='hwinfo --short'
-
-## HBlock
-alias ublock='sudo hblock'
 
 #youtube-dl
 alias yta-best="yt-dlp --extract-audio --audio-format best "
@@ -155,8 +153,12 @@ alias rkeys='sudo pacman-key --refresh-keys'
 
 ### HBLOCK Stuff
 
-alias block="sudo hblock"
+alias hblock="sudo hblock"
 alias unhblock="hblock -S none -D none"
+
+### Building & Installing
+
+alias mkinstall='makepkg -rsi --noconfirm'
 
 #shutdown or reboot
 alias sr='sudo reboot'

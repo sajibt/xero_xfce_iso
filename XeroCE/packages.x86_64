@@ -245,7 +245,6 @@ touchegg
 gestures
 fingerprint-gui
 xf86-input-void
-xf86-input-wacom
 xf86-input-evdev
 iio-sensor-proxy
 libinput-gestures
@@ -379,6 +378,7 @@ gtk-engine-murrine
 adw-gtk3
 plank-themes
 xfce-backgrounds
+libadwaita-without-adwaita-git
 tela-circle-icon-theme-brown-git
 
 ### Browser
