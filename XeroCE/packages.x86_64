@@ -342,6 +342,7 @@ numlockx
 lm_sensors
 samba-support
 appstream-glib
+xremap-gnome-bin
 
 ### Bat to replace cat
 
@@ -397,6 +398,7 @@ ffnvcodec-headers
 yay-bin
 flatpak
 topgrade
+arch-update
 pacseek-bin
 pacman-contrib
 pacman-mirrorup
