@@ -308,6 +308,7 @@ networkmanager
 nm-cloud-setup
 rate-mirrors-bin
 systemd-resolvconf
+linux-wifi-hotspot
 networkmanager-vpnc
 networkmanager-pptp
 networkmanager-l2tp
