@@ -2,22 +2,21 @@
 ###                   Archiso                       ###
 #######################################################
 
+### Base stuff
+
 archiso
-alsa-utils
-amd-ucode
-arch-install-scripts
-archinstall
 b43-fwcutter
 base
 base-devel
+
+### More Stuff
+
 bind
 bolt
 brltty
-broadcom-wl
 btrfs-progs
 clonezilla
 cloud-init
-crda
 darkhttpd
 ddrescue
 dhclient
@@ -41,27 +40,17 @@ fd
 fsarchiver
 gnu-netcat
 gpart
-gparted
 gpm
 gptfdisk
-grub
 hdparm
 hyperv
-intel-ucode
 irssi
-iw
-iwd
 jfsutils
 kitty-terminfo
 less
 lftp
 libfido2
 libusb-compat
-linux
-linux-headers
-linux-atm
-linux-firmware
-linux-firmware-marvell
 lsscsi
 lvm2
 lynx
@@ -71,10 +60,6 @@ mc
 mdadm
 memtest86+
 memtest86+-efi
-mkinitcpio
-mkinitcpio-archiso
-mkinitcpio-nfs-utils
-modemmanager
 mtools
 nano
 nbd
@@ -85,6 +70,7 @@ nmap
 ntfs-3g
 nvme-cli
 open-iscsi
+open-vm-tools
 openconnect
 openpgp-card-tools
 openssh
@@ -99,7 +85,6 @@ pv
 reflector
 rp-pppoe
 rsync
-rxvt-unicode-terminfo
 screen
 sdparm
 sequoia-sq
@@ -120,17 +105,20 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
 vpnc
-wezterm-terminfo
 wireguard-tools
-wireless-regdb
-wireless_tools
-wpa_supplicant
 wvdial
 xdotool
 xfsprogs
 xl2tpd
+
+### Kernel/Firmware
+
+linux
+linux-atm
+linux-headers
+linux-firmware
+linux-firmware-marvell
 
 ### Grub Stuff
 
@@ -173,12 +161,13 @@ boost-libs
 mkinitcpio-openswap
 gtk-update-icon-cache
 
-### Grub Stuff
+### mkinitcpio stuff
 
-grub
-os-prober
-grub-tools
-update-grub
+mkinitcpio
+mkinitcpio-archiso
+mkinitcpio-firmware
+mkinitcpio-openswap
+mkinitcpio-nfs-utils
 
 ### Tools
 
@@ -224,6 +213,11 @@ gtk-update-icon-cache
 ###                  Hardware                       ###
 #######################################################
 
+### CPU ucode
+
+amd-ucode
+intel-ucode
+
 ### Video
 
 mesa
@@ -239,10 +233,13 @@ xf86-video-openchrome
 ### Input
 
 piper
+ds4drv
 imwheel
 fprintd
-touchegg
+libinput
 gestures
+xpadneo-dkms
+dualsensectl
 fingerprint-gui
 xf86-input-void
 xf86-input-evdev
@@ -252,10 +249,12 @@ game-devices-udev
 xf86-input-vmmouse
 xf86-input-libinput
 xf86-input-synaptics
+libinput-gestures-qt
 xf86-input-elographics
 
 ### Network Adapters
 
+broadcom-wl
 rtw89-dkms-git
 rtl8821ce-dkms-git
 
@@ -280,6 +279,7 @@ gst-plugin-pipewire
 
 ## Pipewire Audio
 
+alsa-utils
 pavucontrol
 wireplumber
 pipewire-jack
@@ -296,6 +296,8 @@ bluez-hid2hci
 
 ### Networking tools
 
+iw
+iwd
 avahi
 openldap
 nss-mdns
@@ -306,13 +308,14 @@ traceroute
 modemmanager
 networkmanager
 nm-cloud-setup
-rate-mirrors-bin
-systemd-resolvconf
+wireless-regdb
+wireless_tools
+wpa_supplicant
 linux-wifi-hotspot
+systemd-resolvconf
 networkmanager-vpnc
 networkmanager-pptp
 networkmanager-l2tp
-nm-connection-editor
 network-manager-sstp
 network-manager-applet
 networkmanager-openvpn
@@ -401,10 +404,27 @@ flatpak
 topgrade
 arch-update
 pacseek-bin
+appstream-qt5
 pacman-contrib
 pacman-mirrorup
 pacman-bintrans
 pacman-mirrorlist
+
+### Vim For the Fans
+
+vim
+vim-align
+vim-csound
+vim-pastie
+vim-runtime
+vim-nerdtree
+vim-supertab
+vim-syntastic
+vim-gitgutter
+vim-bufexplorer
+vim-editorconfig
+vim-nerdcommenter
+vim-coverage-highlight
 
 #######################################################
 ###                  Libraries                      ###
@@ -445,84 +465,6 @@ python-pyaudio
 python-pyparted
 python-pygments
 python-websockets
-
-#######################################################
-###                XeroLinux Extras                 ###
-#######################################################
-
-vi
-duf
-gcc
-git
-npm
-zip
-xdo
-alsi
-inxi
-meld
-wget
-lzop
-nmon
-tree
-vala
-lshw
-cmake
-cblas
-expac
-fuse3
-lhasa
-meson
-ninja
-unace
-unrar
-unzip
-p7zip
-rhash
-sshfs
-vnstat
-nodejs
-cronie
-hwinfo
-arandr
-assimp
-netpbm
-wmctrl
-grsync
-libmtp
-polkit
-sysprof
-semver
-zenity
-dnsmasq
-hddtemp
-mlocate
-jsoncpp
-fuseiso
-gettext
-gparted
-node-gyp
-intltool
-hw-probe
-graphviz
-pkgstats
-inetutils
-downgrade
-s3fs-fuse
-playerctl
-dmidecode
-asciinema
-oniguruma
-appstream
-cifs-utils
-lsb-release
-dbus-python
-laptop-detect
-perl-xml-parser
-edid-decode-git
-gnome-disk-utility
-appmenu-gtk-module
-hardcode-fixer-git
-extra-cmake-modules
 
 #######################################################
 ###                  XFCE Desktop                   ###
@@ -621,3 +563,82 @@ xdg-user-dirs-gtk
 audacious-plugins
 xfce4-panel-profiles
 xdg-desktop-portal-xapp
+
+#######################################################
+###                XeroLinux Extras                 ###
+#######################################################
+
+vi
+duf
+gcc
+git
+npm
+yad
+zip
+xdo
+alsi
+inxi
+meld
+wget
+lzop
+nmon
+tree
+vala
+htop
+lshw
+cmake
+cblas
+expac
+fuse3
+lhasa
+meson
+unace
+unrar
+unzip
+p7zip
+rhash
+sshfs
+vnstat
+nodejs
+cronie
+hwinfo
+arandr
+assimp
+netpbm
+wmctrl
+grsync
+libmtp
+polkit
+sysprof
+semver
+zenity
+gparted
+dnsmasq
+hddtemp
+mlocate
+jsoncpp
+fuseiso
+gettext
+gparted
+node-gyp
+intltool
+hw-probe
+graphviz
+pkgstats
+inetutils
+downgrade
+s3fs-fuse
+playerctl
+dmidecode
+asciinema
+oniguruma
+appstream
+cifs-utils
+lsb-release
+dbus-python
+laptop-detect
+perl-xml-parser
+edid-decode-git
+appmenu-gtk-module
+hardcode-fixer-git
+extra-cmake-modules
